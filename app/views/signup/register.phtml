@@ -1,0 +1,7 @@
+<div class="alert alert-<?php echo $success === true ? 'success' : 'danger'; ?>">
+    <?php echo $message; ?>
+</div>
+
+<div class="col-md-6">
+<?php echo $this->tag->linkTo(['/', 'Logout', 'class' => 'btn btn-primary']); ?>
+</div>

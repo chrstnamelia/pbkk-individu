@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phalcon Tutorial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <?php echo $this->getContent(); ?>
+</div>
+
+<div class="col-md-6">
+<h2>AskTC</h2>
+<h3 class="text-center" style="padding-bottom: 20px">Sign Up</h3>
+<?php echo $this->tag->form("signup/register"); ?>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <?php echo $this->tag->textField(["name", "class" => "form-control", "placeholder" => "Enter Your Full Name"]); ?>
+    </div>
+
+    <div class="form-group">
+        <label for="email">E-Mail</label>
+        <?php echo $this->tag->textField(["email", "class" => "form-control", "placeholder" => "Enter Email Address"]); ?>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <?php echo $this->tag->textField(["password", "class" => "form-control", "placeholder" => "Enter Full Name"]); ?>
+    </div>
+
+    <div class="form-group">
+        <?php echo $this->tag->submitButton(["Sign Up", "class" => "btn btn-primary"]); ?>
+    </div>
+</div>
+</form>
+</body>
+</html>
+

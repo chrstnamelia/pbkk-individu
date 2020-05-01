@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phalcon Tutorial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <?php echo $this->getContent(); ?>
+</div>
+
+<div class="col-md-6">
+<h1>AskTC</h1>
+
+
+<?php echo $this->tag->linkTo([
+    'login',
+    'Login',
+    "class"=> "btn btn-primary"]
+); ?>
+
+
+<?php echo $this->tag->linkTo([
+    'signup',
+    'Sign Up',
+    "class"=> "btn btn-primary"]
+); ?>
+
+
+</div>
+</body>
+</html>
