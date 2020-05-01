@@ -9,8 +9,8 @@ class LoginController extends Controller
 
     }
 
-    public function startAction(){
-
+    public function startAction()
+    {
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
@@ -20,7 +20,7 @@ class LoginController extends Controller
             'bind' => [
                 'email'    => $email,
                 'password' => sha1($password),
-            ],
+            ]
         ]);
 
         if($user){
